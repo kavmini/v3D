@@ -1,8 +1,8 @@
-title: "FORM3D"
+title: "v3D"
 description: "Impresión 3D de precisión bajo demanda"
 baseurl: ""
 url: "https://kavmini.github.io"
-repository: "tuuskavmini/v3D"
+repository: "kavmini/v3D"
 
 # Build settings
 theme: null
