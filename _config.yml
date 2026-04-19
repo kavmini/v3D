@@ -35,3 +35,6 @@ social:
   instagram: "form3d_studio"
   twitter: "form3d_studio"
   email: "hola@form3d.es"
+
+include:
+  - _pages
