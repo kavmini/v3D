@@ -1,0 +1,109 @@
+---
+layout: default
+title: Contacto
+description: Escríbenos para presupuestos, consultas o cualquier pregunta sobre tu proyecto de impresión 3D.
+permalink: /contacto/
+---
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Hablemos de<br><em>tu proyecto</em></h1>
+    <p class="sub">Cuéntanos qué necesitas. Respondemos en menos de 48 horas.</p>
+  </div>
+</section>
+
+<div class="container">
+  <div class="contact-layout">
+
+    <!-- Info + Social -->
+    <div class="contact-info">
+      <h2>¿Tienes una idea? Nosotros la imprimimos.</h2>
+      <p>
+        Tanto si tienes un archivo listo como si estás en fase de boceto, podemos ayudarte. 
+        Usa el formulario o escríbenos directamente a través de cualquier canal.
+      </p>
+      <p>
+        Para encargos urgentes o presupuestos detallados, incluye en el mensaje el material 
+        preferido, la cantidad de piezas y si tienes archivo disponible.
+      </p>
+
+      <div class="social-links">
+
+        <a href="https://instagram.com/{{ site.social.instagram }}" target="_blank" rel="noopener" class="social-link">
+          <span class="platform">Instagram</span>
+          <span class="handle">@{{ site.social.instagram }}</span>
+          <span class="arrow">→</span>
+        </a>
+
+        <a href="https://twitter.com/{{ site.social.twitter }}" target="_blank" rel="noopener" class="social-link">
+          <span class="platform">Twitter / X</span>
+          <span class="handle">@{{ site.social.twitter }}</span>
+          <span class="arrow">→</span>
+        </a>
+
+        <a href="mailto:{{ site.social.email }}" class="social-link">
+          <span class="platform">Email directo</span>
+          <span class="handle">{{ site.social.email }}</span>
+          <span class="arrow">→</span>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <!-- 
+      Opciones para el backend del formulario en GitHub Pages:
+      1. Formspree.io (gratuito hasta 50 envíos/mes) — cambia action por tu endpoint
+      2. Netlify Forms (si migras a Netlify)
+      3. Fab-form, getform.io u otros
+    -->
+    <form
+      class="contact-form"
+      action="https://formspree.io/f/TU_ID_FORMSPREE"
+      method="POST"
+    >
+
+      <div class="field">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+      </div>
+
+      <div class="field">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+      </div>
+
+      <div class="field">
+        <label for="tipo">Tipo de encargo</label>
+        <select id="tipo" name="tipo">
+          <option value="">Selecciona una opción</option>
+          <option value="prototipo">Prototipo / diseño propio</option>
+          <option value="pieza">Pieza de repuesto o funcional</option>
+          <option value="decoracion">Decoración / figura</option>
+          <option value="multiple">Múltiples unidades</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="mensaje">Mensaje</label>
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          placeholder="Describe tu proyecto: material preferido, dimensiones aproximadas, cantidad de piezas, si tienes archivo disponible..."
+          required
+        ></textarea>
+      </div>
+
+      <!-- Honeypot anti-spam -->
+      <input type="text" name="_gotcha" style="display:none">
+
+      <button type="submit" class="btn-submit">
+        Enviar mensaje
+        <span class="arrow">→</span>
+      </button>
+
+    </form>
+
+  </div><!-- /contact-layout -->
+</div><!-- /container -->

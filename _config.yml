@@ -1,0 +1,37 @@
+title: "FORM3D"
+description: "Impresión 3D de precisión bajo demanda"
+baseurl: ""
+url: "https://kavmini.github.io"
+repository: "tuuskavmini/v3D"
+
+# Build settings
+theme: null
+markdown: kramdown
+permalink: pretty
+
+# Collections
+collections:
+  works:
+    output: true
+    permalink: /works/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md
+
+# Social
+social:
+  instagram: "form3d_studio"
+  twitter: "form3d_studio"
+  email: "hola@form3d.es"

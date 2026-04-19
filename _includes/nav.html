@@ -1,0 +1,10 @@
+<nav class="site-nav">
+  <div class="container">
+    <a href="{{ '/' | relative_url }}" class="nav-logo">FORM<span>3D</span></a>
+    <ul class="nav-links">
+      <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Portfolio</a></li>
+      <li><a href="{{ '/servicios/' | relative_url }}" {% if page.url contains 'servicios' %}class="active"{% endif %}>Servicios</a></li>
+      <li><a href="{{ '/contacto/' | relative_url }}" {% if page.url contains 'contacto' %}class="active"{% endif %}>Contacto</a></li>
+    </ul>
+  </div>
+</nav>

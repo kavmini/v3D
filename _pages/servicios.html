@@ -1,0 +1,142 @@
+---
+layout: default
+title: Servicios
+description: Qué imprimimos, qué no imprimimos y cómo solicitarnos un encargo.
+permalink: /servicios/
+---
+
+<section class="container">
+  <div class="page-hero page-hero--single">
+    <div class="page-hero-left">
+      <p class="page-hero-kicker">Guía de servicios</p>
+      <h1>Cómo trabajamos<br>contigo</h1>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="info-layout">
+
+    <aside class="info-sidebar">
+      <nav>
+        <a href="#que-imprimimos" class="active">Qué imprimimos</a>
+        <a href="#que-no">Qué no</a>
+        <a href="#filamentos">Filamentos</a>
+        <a href="#como-pedir">Cómo pedir</a>
+        <a href="#tiempos">Tiempos y precios</a>
+      </nav>
+    </aside>
+
+    <div class="info-content">
+
+      <section id="que-imprimimos">
+        <h2>Qué imprimimos</h2>
+        <p>Trabajamos exclusivamente con impresión FDM (filamento). Si tienes un archivo o una idea, podemos darle forma.</p>
+        <h3>Categorías habituales</h3>
+        <div class="tag-list">
+          <span class="tag ok">Prototipos de producto</span>
+          <span class="tag ok">Piezas de repuesto</span>
+          <span class="tag ok">Decoración y arte</span>
+          <span class="tag ok">Componentes mecánicos</span>
+          <span class="tag ok">Carcasas electrónicas</span>
+          <span class="tag ok">Accesorios y gadgets</span>
+          <span class="tag ok">Figuras y miniaturas</span>
+          <span class="tag ok">Piezas arquitectónicas</span>
+          <span class="tag ok">Moldes y negativos</span>
+        </div>
+      </section>
+
+      <section id="que-no">
+        <h2>Qué no imprimimos</h2>
+        <p>Por motivos legales, éticos o técnicos, hay proyectos que no podemos aceptar.</p>
+        <ul>
+          <li>Armas, piezas de armas o accesorios relacionados</li>
+          <li>Reproducciones de objetos protegidos por copyright sin licencia</li>
+          <li>Piezas con fines claramente fraudulentos o ilegales</li>
+          <li>Objetos que supongan un riesgo para la seguridad de terceros</li>
+        </ul>
+        <div class="tag-list">
+          <span class="tag no">Armas y derivados</span>
+          <span class="tag no">Copyright sin licencia</span>
+          <span class="tag no">Uso fraudulento</span>
+        </div>
+      </section>
+
+      <section id="filamentos">
+        <h2>Filamentos disponibles</h2>
+        <p>Trabajamos con los materiales FDM más utilizados. Si necesitas algo específico, consúltanos.</p>
+        <ul>
+          <li>PLA — uso general, buena definición, amplia gama de colores</li>
+          <li>PETG — más resistente, apto para uso exterior o entornos húmedos</li>
+          <li>ABS — resistencia térmica, ideal para uso técnico</li>
+          <li>TPU — flexible, perfecto para fundas y juntas</li>
+        </ul>
+        <p>Para pedidos con requerimientos de material específico, incluye el detalle en tu mensaje.</p>
+      </section>
+
+      <section id="como-pedir">
+        <h2>Cómo hacer un encargo</h2>
+        <p>El proceso es sencillo. Solo necesitas un archivo 3D o una idea clara de lo que quieres.</p>
+        <div class="steps">
+          <div class="step">
+            <span class="step-num">01</span>
+            <div class="step-body">
+              <h4>Envíanos tu archivo o descripción</h4>
+              <p>Aceptamos STL, OBJ, 3MF y STEP. Si no tienes archivo, cuéntanos qué necesitas.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">02</span>
+            <div class="step-body">
+              <h4>Revisamos y enviamos presupuesto</h4>
+              <p>En menos de 48h tienes respuesta con precio, material y plazo.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">03</span>
+            <div class="step-body">
+              <h4>Confirmas y empezamos</h4>
+              <p>Con tu confirmación, programamos la impresión.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">04</span>
+            <div class="step-body">
+              <h4>Entrega o recogida</h4>
+              <p>Enviamos a toda España y recogida presencial en Tenerife.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tiempos">
+        <h2>Tiempos y precios</h2>
+        <p>El precio depende del volumen de la pieza, el filamento elegido y el nivel de acabado. Cada encargo se presupuesta individualmente.</p>
+        <h3>Plazos orientativos</h3>
+        <ul>
+          <li>Piezas pequeñas (menos de 100g) — 1 a 2 días hábiles</li>
+          <li>Piezas medianas (100–400g) — 2 a 4 días hábiles</li>
+          <li>Piezas grandes o múltiples unidades — a consultar</li>
+          <li>Servicio urgente — disponible con recargo</li>
+        </ul>
+        <p>Para pedidos con volumen o regularidad, ofrecemos tarifas especiales.</p>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<script>
+  const sections = document.querySelectorAll('.info-content section[id]');
+  const navLinks = document.querySelectorAll('.info-sidebar a');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(link => {
+          link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+        });
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  sections.forEach(s => observer.observe(s));
+</script>
