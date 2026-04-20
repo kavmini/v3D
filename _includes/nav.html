@@ -1,8 +1,8 @@
 <nav class="site-nav">
   <div class="container">
-    <a href="{{ '/' | relative_url }}" class="nav-logo">
-  <span class="logo-br">[</span><span class="logo-v">V</span>3D<span class="logo-br">]</span>
-</a>
+    <a href="{{ '/' | relative_url }}" class="nav-logo" id="site-logo">
+      <span id="nav-br-left" class="logo-br">[</span><span id="nav-v" class="logo-v">V</span><span id="nav-3" class="logo-3">3</span><span id="nav-d" class="logo-d">D</span><span id="nav-br-right" class="logo-br">]</span>
+    </a>
     <ul class="nav-links">
       <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Portfolio</a></li>
       <li><a href="{{ '/servicios/' | relative_url }}" {% if page.url contains 'servicios' %}class="active"{% endif %}>Servicios</a></li>
