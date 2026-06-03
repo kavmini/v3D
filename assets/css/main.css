@@ -678,8 +678,3 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   object-fit: cover;
   display: block;
 }
-
-.pf-row--duo .work-card .work-img-wrap  { aspect-ratio: 4/3; }
-.pf-row--trio .work-card .work-img-wrap { aspect-ratio: 1/1; }
-.pf-row--rduo .work-card:first-child .work-img-wrap { aspect-ratio: 1/1; }
-.pf-row--rduo .work-card:last-child .work-img-wrap  { aspect-ratio: 4/3; }
