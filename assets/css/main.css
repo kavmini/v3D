@@ -209,10 +209,6 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   gap: 12px;
 }
 
-.pf-row--duo  .work-card .work-img-wrap { aspect-ratio: 4/3; position: relative; }
-.pf-row--trio .work-card .work-img-wrap { aspect-ratio: 1/1; position: relative; }
-.pf-row--rduo .work-card:first-child .work-img-wrap { aspect-ratio: 1; position: relative; }
-.pf-row--rduo .work-card:last-child  .work-img-wrap { aspect-ratio: 4/3; position: relative; }
 
 
 .work-card {
