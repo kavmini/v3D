@@ -209,9 +209,11 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   gap: 12px;
 }
 
-.pf-row--duo   { grid-template-columns: 3fr 2fr; }
-.pf-row--trio  { grid-template-columns: 1fr 1fr 1fr; }
-.pf-row--rduo  { grid-template-columns: 2fr 3fr; }
+.pf-row--duo  .work-card .work-img-wrap { aspect-ratio: 4/3; position: relative; }
+.pf-row--trio .work-card .work-img-wrap { aspect-ratio: 1/1; position: relative; }
+.pf-row--rduo .work-card:first-child .work-img-wrap { aspect-ratio: 1; position: relative; }
+.pf-row--rduo .work-card:last-child  .work-img-wrap { aspect-ratio: 4/3; position: relative; }
+
 
 .work-card {
   cursor: pointer;
@@ -664,7 +666,15 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   gap: 3px;
 }
 
+.work-img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
 .work-img-wrap img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
