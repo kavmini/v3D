@@ -680,3 +680,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   object-fit: cover;
   display: block;
 }
+
+.work-card .work-img-wrap {
+  aspect-ratio: 4/3;
+}
