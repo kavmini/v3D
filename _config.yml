@@ -1,6 +1,7 @@
 title: "V3D"
 description: "Impresión 3D de precisión bajo demanda"
-baseurl: "/v3D"
+url: "https://v3d.one"
+baseurl: ""
 url: "https://kavmini.github.io"
 repository: "kavmini/v3D"
 
