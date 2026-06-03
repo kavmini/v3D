@@ -667,8 +667,11 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 }
 
 .work-img-wrap {
-  position: relative;
+  display: block;
+  width: 100%;
+  height: 240px;
   overflow: hidden;
+  position: relative;
 }
 
 .work-img-wrap img {
@@ -679,8 +682,4 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   height: 100%;
   object-fit: cover;
   display: block;
-}
-
-.work-card .work-img-wrap {
-  aspect-ratio: 4/3;
 }
