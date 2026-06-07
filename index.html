@@ -22,55 +22,71 @@ permalink: /
   <div class="section-label"><span>Trabajos recientes</span></div>
   <div class="portfolio-grid">
 
-    <div class="pf-row pf-row--duo">
+    <!-- Fila 1: pieza-01 y pieza-02 juntas, sin recorte -->
+    <div class="pf-row pf-row--natural">
       <div class="work-card">
-        <div class="work-img-wrap">
-          <div class="work-img-wrap">
-    <img src="{{ '/assets/images/work/pieza-01.png' | relative_url }}" alt="Procesos de modelado">
-  </div>
+        <div class="work-img-wrap work-img-wrap--natural">
+          <img src="{{ '/assets/images/work/pieza-01.png' | relative_url }}" alt="Proceso de modelado" loading="lazy">
         </div>
         <div class="work-meta">
           <span class="work-title">Proceso de modelado de mis cajas para cartas Magic</span>
           <span class="work-tag">Juegos de mesa</span>
         </div>
       </div>
-<div class="work-card">
-        <div class="work-img-wrap">
-          <div class="work-img-wrap">
-    <img src="{{ '/assets/images/work/pieza-02.png' | relative_url }}" alt="Caja de cartas">
-  </div>
+      <div class="work-card">
+        <div class="work-img-wrap work-img-wrap--natural">
+          <img src="{{ '/assets/images/work/pieza-02.png' | relative_url }}" alt="Cajas para cartas Magic" loading="lazy">
         </div>
         <div class="work-meta">
           <span class="work-title">Cajas para cartas Magic</span>
           <span class="work-tag">Juegos de mesa</span>
         </div>
-
-    <div class="pf-row pf-row--trio">
-      <div class="work-card">
-        <div class="work-img-wrap"><img src="{{ '/assets/images/work/pieza-03.png' | relative_url }}" alt="Inserto"></div>
-        <div class="work-meta"><span class="work-title">Inserto para el juego "Harmonies"</span><span class="work-tag">Juegos de mesa</span></div>
-      </div>
-      <div class="work-card">
-          <div class="work-img-wrap">
-    <img src="{{ '/assets/images/work/pieza-04.png' | relative_url }}" alt="Portalápices">
-  </div>
-        <div class="work-meta"><span class="work-title">Portabolígrafos para escritorio</span><span class="work-tag">Decoración</span></div>
-      </div>
-      <div class="work-card">
-  <div class="work-img-wrap">
-    <img src="{{ '/assets/images/work/pieza-05.png' | relative_url }}" alt="Caja de cartas">
-  </div>
-        <div class="work-meta"><span class="work-title">Caja para cartas Magic con mecanismo de apertura</span><span class="work-tag">A medida</span></div>
       </div>
     </div>
 
-     <div class="work-card">
-  <div class="work-img-wrap">
-    <img src="{{ '/assets/images/work/pieza-06.png' | relative_url }}" alt="Figura decorativa acabado glass">
+    <!-- Fila 2: pieza-03, pieza-04, pieza-05 en tres columnas -->
+    <div class="pf-row pf-row--trio">
+      <div class="work-card">
+        <div class="work-img-wrap">
+          <img src="{{ '/assets/images/work/pieza-03.png' | relative_url }}" alt="Inserto Harmonies" loading="lazy">
+        </div>
+        <div class="work-meta">
+          <span class="work-title">Inserto para el juego "Harmonies"</span>
+          <span class="work-tag">Juegos de mesa</span>
+        </div>
+      </div>
+      <div class="work-card">
+        <div class="work-img-wrap">
+          <img src="{{ '/assets/images/work/pieza-04.png' | relative_url }}" alt="Portabolígrafos" loading="lazy">
+        </div>
+        <div class="work-meta">
+          <span class="work-title">Portabolígrafos para escritorio</span>
+          <span class="work-tag">Decoración</span>
+        </div>
+      </div>
+      <div class="work-card">
+        <div class="work-img-wrap">
+          <img src="{{ '/assets/images/work/pieza-05.png' | relative_url }}" alt="Caja con mecanismo" loading="lazy">
+        </div>
+        <div class="work-meta">
+          <span class="work-title">Caja para cartas Magic con mecanismo de apertura</span>
+          <span class="work-tag">A medida</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fila 3: pieza-06 sola, ancho completo -->
+    <div class="pf-row pf-row--natural" style="grid-template-columns: 1fr">
+      <div class="work-card">
+        <div class="work-img-wrap work-img-wrap--natural">
+          <img src="{{ '/assets/images/work/pieza-06.png' | relative_url }}" alt="Figura decorativa acabado glass" loading="lazy">
+        </div>
+        <div class="work-meta">
+          <span class="work-title">Figura decorativa acabado glass</span>
+          <span class="work-tag">Decoración</span>
+        </div>
+      </div>
+    </div>
+
   </div>
-  <div class="work-meta">
-    <span class="work-title">Figura decorativa acabado glass</span>
-    <span class="work-tag">Decoración</span>
-  </div>
-</div>
 </section>
