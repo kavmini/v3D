@@ -546,3 +546,21 @@ img { display: block; max-width: 100%; }
   .pf-row--trio { grid-template-columns: 1fr; }
   .nav-links { display: none; }
 }
+
+/* Fila natural — sin recorte, respeta proporción original */
+.pf-row--natural {
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+}
+
+.work-img-wrap--natural {
+  aspect-ratio: unset !important;
+  height: auto;
+}
+
+.work-img-wrap--natural img {
+  position: static;
+  width: 100%;
+  height: auto;
+  object-fit: unset;
+}
